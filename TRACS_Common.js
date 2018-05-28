@@ -1525,7 +1525,7 @@ function buildDataRow(item, objModel, buildType, p_id) {
                 if (dbAttrs.DataType === "Email") {
                     var firstName = item.FullName.split(' ')[0];     // use first word of full name in case name prefix of email address differs to name
                     // "%0D%0A" represents a new line character - see http://www.rapidtables.com/web/html/mailto.htm
-                    emailAppend = "<a href=mailto:" + item[dbField] + "?bcc=shaun.keegan@hnehealth.nsw.gov.au&amp;subject=Your&nbsp;Subject&nbsp;&amp;body=Dear&nbsp;" + firstName + "%2C" + "%0D%0A" + "&nbsp;" + "%0D%0A" + "Write&nbsp;your&nbsp;message&nbsp;here." + ">" + $value + "<span class='glyphicon glyphicon-envelope'>" + "</a>";
+                    emailAppend = "<a href=mailto:" + item[dbField] + "?bcc=Bob.Smith@whowhat.gov.au&amp;subject=Your&nbsp;Subject&nbsp;&amp;body=Dear&nbsp;" + firstName + "%2C" + "%0D%0A" + "&nbsp;" + "%0D%0A" + "Write&nbsp;your&nbsp;message&nbsp;here." + ">" + $value + "<span class='glyphicon glyphicon-envelope'>" + "</a>";
                 }
                 else if (dbAttrs.DataType === "Date") {
                     if ((item[dbField])) {
@@ -2855,8 +2855,8 @@ $(document.body).on("keyup", "#frmUpdate [id$='Name']", function () {
     // This event listener is for the 'key up' event for name fields on the add/update modal.
     var firstName = $("#upEmployee_First_Name").val() ? $("#upEmployee_First_Name").val() : $("#upUser_First_Name").val();
     var lastName = $("#upEmployee_Last_Name").val() ? $("#upEmployee_Last_Name").val() : $("#upUser_Last_Name").val();
-    $('#upEmployee_Email').val(firstName + '.' + lastName + '@' + 'hnehealth.nsw.gov.au');
-    $("#upUser_Email").val(firstName + '.' + lastName + '@' + 'hnehealth.nsw.gov.au');
+    $('#upEmployee_Email').val(firstName + '.' + lastName + '@' + 'whowhat.gov.au');
+    $("#upUser_Email").val(firstName + '.' + lastName + '@' + 'whowhat.gov.au');
 });
 
 $(document.body).on("change", "#frmUpdate input,#frmChangePassword input", function () {
