@@ -2,7 +2,6 @@
 
 //#region Mod Log
 /* Modification Log
- *  4/4/2017    -   If this is development highlight the Hunter New England Health banner in green
  *  5/4/2017    -   If this is development default the login credentials and simulate a login button click event
  *  19/4/2017   -   Added :not pseudo class to row double click script to exclude reports rows
  *  01/05/2017  -   When adding or removing audit doco, update the finalised flag accordingly
@@ -670,7 +669,7 @@ function buildUpdateModal($tr) {
         if (dbFieldDT) {
             if (dbAttrs.DataType === "Email") {
                 validationType = 'email'; // HTML5 performs validation
-                validationPlcHolder = "some.one@hnehealth.nsw.gov.au";
+                validationPlcHolder = "some.one@health.vic.gov.au";
                 validationSize = "50";
             }
             else if (dbAttrs.DataType === "Date") {
@@ -1125,7 +1124,7 @@ function buildInsertModal() {
         if (dbFieldDT) {
             if (dbAttrs.DataType === "Email") {
                 validationType = 'email'; // HTML5 performs validation
-                validationPlcHolder = "some.one@hnehealth.nsw.gov.au";
+                validationPlcHolder = "some.one@health.vic.gov.au";
                 validationSize = "60";
             }
             else if (dbAttrs.DataType === "Date") {
