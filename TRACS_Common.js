@@ -669,7 +669,7 @@ function buildUpdateModal($tr) {
         if (dbFieldDT) {
             if (dbAttrs.DataType === "Email") {
                 validationType = 'email'; // HTML5 performs validation
-                validationPlcHolder = "some.one@health.vic.gov.au";
+                validationPlcHolder = "some.one@health.gov.au";
                 validationSize = "50";
             }
             else if (dbAttrs.DataType === "Date") {
@@ -1124,7 +1124,7 @@ function buildInsertModal() {
         if (dbFieldDT) {
             if (dbAttrs.DataType === "Email") {
                 validationType = 'email'; // HTML5 performs validation
-                validationPlcHolder = "some.one@health.vic.gov.au";
+                validationPlcHolder = "some.one@health.gov.au";
                 validationSize = "60";
             }
             else if (dbAttrs.DataType === "Date") {
